@@ -17,6 +17,12 @@ h3{
     color: white;
 }
 
+h3:hover,
+.text_white:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
 hr{
     color: hsl(215, 32%, 27%);
     margin: 15px 0;
@@ -50,6 +56,24 @@ p{
     margin-bottom: 20px;
 }
 
+.img_container{
+    position: relative;
+}
+
+.view{
+    display: none;
+    position: absolute;
+    background-color: hsla(178, 100%, 50%, 0.395);
+    border-radius: 10px;
+    padding: 40%;
+    width: 100%;
+}
+
+.img_container:hover .view{
+    cursor: pointer;
+    display: block;
+}
+
 img{
     margin-right: 5px;
 }
@@ -76,3 +100,4 @@ img{
 .flex span{
     vertical-align: top;
 }
+
